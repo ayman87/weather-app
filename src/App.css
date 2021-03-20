@@ -1,6 +1,64 @@
-*{
+* {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  
+  font-family: workSans;
+}
+@font-face {
+  font-family: "WorkSans";
+  font-style: normal;
+  font-weight: normal;
+  src: url(Fonts/WorkSans-VariableFont_wght.ttf) format("truetype");
+}
+body{
+  background-image: url(Imgs/Background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.container {
+  padding: 2rem;
+}
+.content {
+  padding: 0.5rem;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+.logo {
+  text-transform: uppercase;
+  padding: 1rem;
+  font-weight: 700;
+  font-size: 2rem;
+  letter-spacing: 0.2rem;
+  color: white;
+}
+.switch__list {
+  list-style: none;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+.switch__list-item {
+  padding: 0.5rem 2rem;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  color: white;
+  cursor: pointer;
+}
+.switch__list-item.active{
+  background-color: rgba(255, 255, 255, 0.25);
+}
+.switch__list-divider {
+  padding: 0;
+  position: absolute;
+  text-transform: uppercase;
+  left: 49%;
+  transform: scaleY(3);
+  color: white;
+  top: 33%;
+}
+.switch__wrapper{
+  display: flex;
 }

@@ -22,8 +22,8 @@ function CurrentCast(props) {
             {new Date(props.fetchedData.currently.time * 1000).toLocaleDateString("en-US", {
               weekday: "long",
             })}
-            , {new Date(props.fetchedData.currently.time * 1000).getDate()}
-            {new Date(props.fetchedData.currently.time * 1000).getFullYear()}
+            , {new Date(props.fetchedData.currently.time * 1000).getDate() }&nbsp; 
+            { new Date(props.fetchedData.currently.time * 1000).getFullYear()}
           </div>
           <img
             src={weatherIcons[props.fetchedData.currently.icon]}

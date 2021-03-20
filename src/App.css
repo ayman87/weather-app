@@ -11,14 +11,13 @@
   font-weight: normal;
   src: url(Fonts/WorkSans-VariableFont_wght.ttf) format("truetype");
 }
-.app {
+.App {
   max-height: 100vh;
-}
-body {
   background-image: url(Imgs/Background.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  height: 100vh;
 }
 .container {
   padding: 2.5rem 7.5rem;
@@ -243,4 +242,76 @@ body {
   right: 0;
   top: 0;
   padding: 2.5rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .App{
+    height: 100vh;
+  }
+  .container {
+    padding: 1.5rem;
+  }
+  .currentCast__wrapper {
+    padding: 2rem;
+  }
+  .currentCast__city {
+    font-size: 1.5rem;
+  }
+  .currentCast__imgDescription {
+    font-size: 1rem;
+  }
+  .currentCast__date {
+    font-size: 1rem;
+  }
+  .currenCast__img {
+    width: 3rem;
+  }
+  .currentCast__currentDegree {
+    font-size: 4rem;
+  }
+  .currentCast__currentDegree::after {
+    font-size: 3rem;
+  }
+  .currentCast__dayDegree {
+    font-size: 2rem;
+  }
+  .currentCast__dayDegree-high::after, .currentCast__dayDegree-low::after {
+    font-size: 1.5rem;
+  }
+  .currectCast__info-right{
+    padding-right: 0;
+  }
+  .currenCast__img{
+    margin-top: 0;
+  }
+  .currentCast__decription {
+    font-size: 1rem;
+  }
+  .CastTabs__container{
+    padding: 2rem;
+  }
+  .castTabs__tab{
+    font-size: 1.2rem;
+  }
+  .castTabPanel__time{
+    font-size: 1.2rem;
+  }
+  .castTabPanel__degree{
+    font-size: 1.5rem;
+  }
+  .castTabPanel__img{
+    width: 3rem;
+  }
+  .header {
+    justify-content: center;
+  }
+  .logo {
+    font-size: 1.5rem;
+  }
+  .switch__wrapper {
+    padding: 1rem;
+    width: 100%;
+    justify-content: center;
+    position: relative;
+  }
 }
